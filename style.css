@@ -1,0 +1,208 @@
+@font-face {
+  font-family: Poppins;
+  src: url(./Poppins.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+#nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* background-color: red ; */
+  gap: 30px;
+  padding: 0px 30px;
+  background-color: rgba(168, 168, 168, 0.225);
+}
+#nav h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+#nav i {
+  background-color: black;
+  color: white;
+  font-size: 25 px;
+  padding: 13px;
+  border-radius: 50%;
+  font-weight: 500;
+}
+
+#center {
+  width: 100%;
+  /* background-color: grey; */
+  padding: 11px 100px;
+  background-color: rgba(188, 188, 188, 0.211);
+}
+#center h1 {
+  /* font-size: 60px; */
+  font-size: 4.2vw;
+
+  font-weight: 400;
+  /* line-height: 70px; */
+  line-height: 4.4vw;
+  /* background-color: #8f5d5d; */
+}
+#center-in {
+  /* height: 150px; */
+  width: 100%;
+  /* background-color: grey; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 10px; */
+}
+#center-in p {
+  font-size: 1vw;
+  font-weight: 400;
+  line-height: 1.6vw;
+}
+#right {
+  width: 20%;
+}
+.elem {
+  /* background-color: yellow; */
+  /* margin: 5px;    */
+  padding: 10px 0px;
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.elem i {
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 0;
+}
+.elem a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+.elem:hover i {
+  opacity: 1;
+}
+.elem:hover {
+  background-color: rgba(168, 168, 168, 0.133);
+}
+.elem:hover a {
+  text-decoration: underline;
+}
+#bottom {
+  height: 31.2%;
+  width: 100%;
+  background-color: rgb(52, 38, 38);
+  background-image: url(https://images.unsplash.com/photo-1654720110542-dddee085756f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: 0 25%;
+}
+@media (max-width: 600px) {
+  #nav {
+    height: 70px;
+    width: 100%;
+    gap: 9px;
+    padding: 10px 20px;
+    background-color: rgba(168, 168, 168, 0.225);
+  }
+  #nav h4 {
+    font-size: 20px;
+    font-weight: 500;
+    /* display: none; */
+  }
+  #nav i {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: 500;
+  }
+  
+  #center {
+    width: 100%;
+    background-color: grey;
+    padding: 11px 20px;
+    background-color: rgba(188, 188, 188, 0.211);
+  }
+  #center h1 {
+    /* font-size: 60px; */
+    font-size: 10vw;
+    font-weight: 400;
+    line-height: 11vw;
+    
+  }
+  #center-in {
+    /* height: 150px; */
+    width: 100%;
+    /* background-color: grey; */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin-bottom: 10px; */
+  }
+  #center-in p {
+    margin-top:3px;
+    margin-bottom: 10px;
+    font-size: 3vw;
+    font-weight: 300;
+    line-height: 4vw;
+  }
+  #right {
+    width: 100%;
+  }
+  .elem {
+    /* background-color: yellow; */
+    /* margin: 5px;    */
+    padding: 6px 0px;
+    border-top: 1.9px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .elem i {
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 1;
+  }
+  .elem a {
+    color: black;
+    text-decoration: none; 
+    font-weight: 500;
+    font-size: 13px;
+  }
+  /* .elem:hover i {
+    opacity: 1;
+  } */
+  .elem:hover {
+    background-color: rgba(168, 168, 168, 0.133);
+  }
+  .elem:hover a {
+    text-decoration: underline;
+  }
+  #bottom {
+    height: 37.9%;
+    width: 100%;
+    background-color: rgb(52, 38, 38);
+    background-image: url(https://images.unsplash.com/photo-1654720110542-dddee085756f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 0 25%;
+  }
+}
